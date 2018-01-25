@@ -1,0 +1,83 @@
+<!doctype.html>
+<html>
+
+<head>
+    <script lang="javascript" type="text/javascript">
+
+        function autoRefresh(t) {
+            setTimeout("location.reload(true);", t);
+        }
+
+        function redirectPage() {
+            window.location = "http://microsoft.com.sg";
+
+        }
+    </script>
+
+</head>
+
+<body onload="javascript:autorefresh(5000);">
+
+    <script lang="javascript" type="text/javascript">
+        var employee = {
+            name: "James",
+            email: "james@cook.com",
+            tel: "9999999",
+
+        }
+
+        var employeelist = [
+
+            {
+                name: "James",
+                email: "james@cook.com",
+                tel: "9999999",
+
+            },
+
+
+            {
+                name: "Mark",
+                email: "mark@cook.com",
+                tel: "8888888",
+
+            },
+
+            {
+                name: "Lee",
+                email: "lee@cook.com",
+                tel: "7777777",
+
+            }
+
+        ]
+
+        document.write("Size of employeelist: " + employeelist.length);
+
+        document.write("<br>");
+
+        document.write("<table border=2 width=80% align=center>");
+
+        document.write("<thead>");
+        document.write("<tr>");
+        document.write("<th>name</th>");
+        document.write("<th>email</th>");
+        document.write("<th>tel</th>");
+
+
+        for (var i = 0; i < employeelist.length; i++) {
+            document.write("<tr>");
+            document.write("<td>" + employeelist[i].name + "</td>");
+            document.write("<td>" + employeelist[i].email + "</td>");
+            document.write("<td>" + employeelist[i].tel + "</td>");
+            document.write("</tr>");
+
+        }
+        document.write("</table>");
+
+    </script>
+    <a href="javascript:location.reload(true)" </body>
+
+
+
+</html>
